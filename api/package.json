@@ -1,0 +1,28 @@
+{
+  "name": "metaspace-api",
+  "version": "0.0.1",
+  "description": "MetaSpace Backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vansh2101/MetaSpace.git"
+  },
+  "keywords": [
+    "MetaSpaceBackend"
+  ],
+  "author": "Manan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vansh2101/MetaSpace/issues"
+  },
+  "homepage": "https://github.com/vansh2101/MetaSpace#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^1.35.4",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  }
+}
