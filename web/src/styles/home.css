@@ -1,0 +1,140 @@
+.intro{
+    padding: 0 5%;
+    position: relative;
+}
+.intro img{
+    position: absolute;
+    bottom: -14%;
+    right: 0;
+    width: 48vw;
+    z-index: -1;
+}
+#path{
+    bottom: -14.5%;
+    right: 5px;
+    width: 65vw;
+    z-index: -2;
+}
+.intro h1{
+    width: 50%;
+    font-size: 2.7vw;
+}
+.intro .btn{
+    font-size: 1.5vw;
+    width: 15%;
+    height: 53px;
+    border-radius: 18px;
+}
+.intro table{
+    width: 50%;
+    text-align: left;
+    margin-top: 3%;
+}
+.intro th{
+    font-size: 2.3vw;
+    position: relative;
+}
+.intro td{
+    color: #828282;
+    font-size: 1vw;
+}
+
+.circle{
+    border-radius: 50%;
+    border: none;
+    height: 25px;
+    width: 25px;
+    z-index: -1;
+    position: absolute;
+    top: 10%;
+    left: -2%;
+}
+
+
+.split{
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    margin-top: 5%;
+}
+
+.left{
+    width: 45%;
+    padding-left: 5%;
+}
+.left img{
+    width: 90%;
+}
+
+.left .flexbox{
+    display: flex;
+    padding-left: 10%;
+    width: 90%;
+}
+.left .flexbox img{
+    width: 35%;
+    cursor: pointer;
+}
+
+.right{
+    width: 50%;
+    padding-right: 10px;
+    counter-reset: num;
+}
+.right h1{
+    font-size: 2.5vw;
+    margin-top: 8%;
+}
+.right .btn{
+    width: 40%;
+    height: 65px;
+    font-size: 1.7vw;
+}
+
+.right ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.right li{
+    margin-bottom: 5%;
+}
+.right h2{
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.right h2::before{
+    counter-increment: num;
+    content: '0' counter(num) '';
+    display: inline-block;
+    font-size: 3.5vw;
+    background-image: url(../../public/img/star.png);
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: top left;
+}
+.right p{
+    width: 80%;
+    font-size: 1.6vw;
+    opacity: 0.7;
+    margin: 0;
+    margin-left: 1%;
+}
+
+.path{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 88vw;
+    z-index: -1;
+}
+
+.end{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40vw;
+    z-index: -1;
+}

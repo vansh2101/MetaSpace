@@ -1,0 +1,17 @@
+.main{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 7vw;
+}
+.main .container{
+    margin-top: 0;
+}
+
+.bgr{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 50vw;
+}
