@@ -42,3 +42,9 @@
     width: 50%;
     margin: 6% 0;
 }
+
+.camera{
+    display: inline-block;
+    max-width: 680px;
+    max-height: 480px;
+}
