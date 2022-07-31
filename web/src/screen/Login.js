@@ -81,7 +81,7 @@ function Login() {
                 <br/>
                 <br/>
 
-                <form>
+                <form action={"/dashboard"}>
                     <label>Email</label> <br/>
                     <input type='email' name='email' placeholder='E.g.- johndoe@gmail.com' required/>
 
