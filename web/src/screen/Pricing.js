@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef,useState} from 'react';
 import Navbar from "../components/Navbar";
 import {FormControlLabel, Grid, Stack, styled, Switch, Typography} from "@mui/material";
 import * as PropTypes from "prop-types";
@@ -55,16 +55,16 @@ const Pricing = () => {
             }),
         },
     }));
-    let yearly = false;
+    const [yearly,setYearly] = useState();
     const year = (e) => {
-        yearly = !!e.checked;
+        setYearly(e.target?.checked);
         // reload all the cards with the new price
     }
 
     return (
         <>
             <Navbar/>
-            <img src='./img/login.png' className='bg'/>
+            <img src='./img/pricing.png' className='bg'/>
             <center>
                 <h1 className={'heading'}>SUBSCRIPTION PLANS</h1>
             </center>
@@ -79,13 +79,13 @@ const Pricing = () => {
 
             <Grid container spacing={4} sx={{display: 'flex', justifyContent: 'center'}}>
                 <Grid item xs={3}>
-                    <PriceCard price={199} plan={"BASIC"} yearly={yearly} features={["Anonymous ID in Metaverse", "Add personal banner", "Link VR to the website/app", "Voice and Profile security"]} />
+                    <PriceCard price={yearly ? 199*12 : 199} plan={"BASIC"} yearly={yearly} features={["Anonymous ID in Metaverse", "Add personal banner", "Link VR to the website/app", "Voice and Profile security"]} />
                 </Grid>
                 <Grid item xs={3}>
-                    <PriceCard price={329} plan={"STANDARD"} yearly={yearly} features={["Anonymous ID in Metaverse", "Add personal banner", "Link VR to the website/app", "Voice and Profile security", "Sentiment Analysis", "Avatar Customization"]}/>
+                    <PriceCard price={yearly ? 329 * 12 : 329} plan={"STANDARD"} yearly={yearly} features={["Anonymous ID in Metaverse", "Add personal banner", "Link VR to the website/app", "Voice and Profile security", "Sentiment Analysis", "Avatar Customization"]}/>
                 </Grid>
                 <Grid item xs={3}>
-                    <PriceCard price={249} plan={"PREMIUM"} yearly={yearly} features={["Anonymous ID in Metaverse", "Add personal banner", "Link VR to the website/app", "Voice and Profile security", "Sentiment Analysis", "Avatar Customization"]}/>
+                    <PriceCard price={yearly ? 429 * 12 : 429} plan={"PREMIUM"} yearly={yearly} features={["Anonymous ID in Metaverse", "Add personal banner", "Link VR to the website/app", "Voice and Profile security", "Sentiment Analysis", "Avatar Customization"]}/>
                 </Grid>
             </Grid>
 
