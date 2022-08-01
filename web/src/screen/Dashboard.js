@@ -28,8 +28,7 @@ function Dashboard() {
       <a-assets>
         <audio id="click-sound" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
 
-        <img id="city" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg" />
-        <img id="city-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg" />
+        <img id="city" src="./img/city.jpg" />
       </a-assets>
 
       <a-sky id="vr" radius="10" src="#city"></a-sky>
@@ -128,11 +127,11 @@ function Dashboard() {
             sound={{on: 'click', src: '#click-sound'}} />
 
           <Entity 
-            text={{value: 'Sentiment Analysis'}} 
-            position={{x: 0.847, y: 1.67, z: -0.85}}/>
+            text={{value: 'Bed Time Mode'}}
+            position={{x: 0.875, y: 1.67, z: -0.85}}/>
 
           <Entity 
-            text={{value: 'Enable if you want people analyse your \nemotions.', align: 'center', width: 0.75}} 
+            text={{value: 'Control your bedtime schedule.', align: 'center', width: 0.75}}
             position={{x: 0.823, y: 1.53, z: -1.3}}/> 
 
           <Entity 
